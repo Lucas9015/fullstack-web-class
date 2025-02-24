@@ -1,0 +1,71 @@
+h1{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+li::marker{
+    content: none;
+}
+.herosection{
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+    padding: 20px;
+    min-height: 350px;
+    background-image: url("/images/bac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abouttext{
+    flex: 3;
+}
+.aboutsection{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    
+}
+.imagesection{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    background-color: gray;
+    text-align: center;
+}
+
+@media(max-width:480px){
+    .navbar{
+        /* background-color: red; */
+        flex-direction: column; 
+        gap: 20px;
+        
+
+}
+.aboutsection{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+}
