@@ -18,6 +18,7 @@ li::marker{
 }
 .herosection{
     text-align: center;
+    font-size: 20px;
     
     display: flex;
     align-items: center;
@@ -26,46 +27,65 @@ li::marker{
 
     padding: 20px;
     min-height: 350px;
-    background-image: url("/images/bac.jpg");
+    background-image: url("/images/aero\ img\ 7.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .abouttext{
     flex: 3;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
-.aboutsection{
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-img{
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
     
-}
-.imagesection{
+    
+    ;
+
+.aboutsection{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    
+}
+    
+.aboutsection img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    /* flex: 1; */
+
+
+}
+.imagesection{
+    flex: 1;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutcompany{
+    font-size: 30px;
+    /* display: flex; */
+    gap: 20px;
+    padding: 20px;
+    border-image-repeat: repeat;
+    height: 800px;
+    width: 2200px;
 }
 .footer{
-    background-color: gray;
-    text-align: center;
+    background-color:gray;
+    text-align: left;
 }
+
 
 @media(max-width:480px){
     .navbar{
         /* background-color: red; */
         flex-direction: column; 
-        gap: 20px;
-        
+        gap: 20px;    
 
 }
-.aboutsection{
-    flex-direction: column-reverse;
-    text-align: center;
-}
-
 }
